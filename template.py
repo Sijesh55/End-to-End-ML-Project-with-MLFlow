@@ -26,13 +26,13 @@ list_of_files = [
     "requirements.txt",
     "setup.py",
     "research/trials.ipynb",
-    "templates/index.html"
+    "templates/index.html",
+    "test.py"
 ]
 
 for filepath in list_of_files:
     filespath = Path(filepath)
     filedir, filename = os.path.split(filepath)
-
 
     if filedir != "":
         os.makedirs(filedir,exist_ok=True)
